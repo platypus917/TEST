@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+    background: linear-gradient(30deg, #c1b69b, #9abcbf);
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: 150px auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+    .item {
+        width: 288px;
+        margin: 6px;
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: auto;
+            vertical-align: middle;
+            border-radius: 15px;
+            object-fit: cover;
+            aspect-ratio: 2 / 3;
+        }
+
+        .txt {
+            background: rgba(255,255,255,.6);
+            position: absolute;
+            bottom: 0;
+            box-sizing: border-box;
+            height: 150px;
+            padding: 15px;
+            border-radius: 0 0 15px 15px;
+            color: #3f3f3f;
+            opacity: 0;
+            transition: .5s;
+
+            h2 {
+                font-weight: 900;
+                font-size: 20px;
+                padding-bottom: .3em;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 16px;
+                padding-bottom: .3em;
+            }
+        }
+
+        &:hover {
+            .txt {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .wrap {
+        flex-wrap: wrap;
+
+        .item {
+            width: 45%;
+            margin: 20px;
+
+            .txt {
+                padding: 30px;
+
+                h2 {
+                    padding-bottom: .4em;
+                }
+
+                p {
+                    padding-bottom: .4em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrap {
+        flex-wrap: wrap;
+
+        .item {
+            width: 90%;
+            margin: 30px;
+
+            .txt {
+                width: 100%;
+                box-sizing: border-box;
+                text-align: center;
+                font-size: 14px;
+                padding: 10px 30px;
+
+                h2 {
+                    padding-bottom: .5em;
+                }
+
+                p {
+                    padding-bottom: .5em;
+                }
+            }
+        }
+    }
+}

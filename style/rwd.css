@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  background: linear-gradient(30deg, #c1b69b, #9abcbf);
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 150px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.wrap .item {
+  width: 288px;
+  margin: 6px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrap .item img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 2/3;
+}
+.wrap .item .txt {
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  bottom: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 150px;
+  padding: 15px;
+  border-radius: 0 0 15px 15px;
+  color: #3f3f3f;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.wrap .item .txt h2 {
+  font-weight: 900;
+  font-size: 20px;
+  padding-bottom: 0.3em;
+}
+.wrap .item .txt p {
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 0.3em;
+}
+.wrap .item:hover .txt {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wrap .item {
+    width: 45%;
+    margin: 20px;
+  }
+  .wrap .item .txt {
+    padding: 30px;
+  }
+  .wrap .item .txt h2 {
+    padding-bottom: 0.4em;
+  }
+  .wrap .item .txt p {
+    padding-bottom: 0.4em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wrap .item {
+    width: 90%;
+    margin: 30px;
+  }
+  .wrap .item .txt {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+  .wrap .item .txt h2 {
+    padding-bottom: 0.5em;
+  }
+  .wrap .item .txt p {
+    padding-bottom: 0.5em;
+  }
+}/*# sourceMappingURL=rwd.css.map */
