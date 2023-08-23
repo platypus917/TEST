@@ -54,10 +54,7 @@ body {
   background: rgba(255, 255, 255, 0.6);
   position: absolute;
   bottom: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 150px;
-  padding: 15px;
+  padding: 10px;
   border-radius: 0 0 15px 15px;
   color: #3f3f3f;
   opacity: 0;
@@ -88,7 +85,7 @@ body {
     margin: 20px;
   }
   .wrap .item .txt {
-    padding: 30px;
+    padding: 20px;
   }
   .wrap .item .txt h2 {
     padding-bottom: 0.4em;
@@ -112,7 +109,7 @@ body {
             box-sizing: border-box;
     text-align: center;
     font-size: 14px;
-    padding: 10px 30px;
+    padding: 20px;
   }
   .wrap .item .txt h2 {
     padding-bottom: 0.5em;
